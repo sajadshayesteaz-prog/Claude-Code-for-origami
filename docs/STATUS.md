@@ -7,4 +7,4 @@
   - JSON Schema برای Model، Step و Progress؛ مدل نمونه `example-crane` معتبر است (`npm run validate:data`).
   - `vendor/` با ۱۲ مخزن در commitهای ثابت روی کامپیوتر کاربر دریافت شده است.
 - **مشکل باز:** Node (پرتابل، `%LOCALAPPDATA%\Programs\nodejs`) هنوز در PATH ویندوز نیست. PWA و IndexedDB هنوز ساخته نشده‌اند.
-- **قدم بعدی:** برگه کار ۰۰۲ از claude.ai. پیشنهاد: فاز ۲ (تاهای پایه) یا سنجش وضوح فایل Komatsu برای فاز ۳.
+- **قدم بعدی:** برگه کار ۰۰۲ (`docs/tasks/002-basic-folds-guide.md`): راهنمای تاهای پایه + اصلاحات کوچک + سنجش کیفیت PDF کتاب‌های Komatsu و Essence.
