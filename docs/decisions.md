@@ -8,3 +8,9 @@
 - 2026-10-18 — FOLD قالب داده داخلی؛ هر مرحله آموزشی = یک frame — claude.ai
 - 2026-10-18 — پشته پیش‌فرض: Vite + React + TypeScript، three.js، fold، rabbit-ear، Origami Simulator؛ ابزارها با Python — claude.ai
 - 2026-10-18 — موتور اول طراحی درختی: هسته BP Studio؛ TreeMaker فقط در صورت نیاز — claude.ai
+- 2026-10-18 — نمای سه‌بعدی: نسخه سبک‌شده Origami Simulator داخل iframe (`app/public/origami-simulator/`)، کنترل با API پیام‌رسانی خودش (importFold/importSVG) و یک فایل کوچک embed — حل‌کننده GPU و کد global/jQuery آن جدا کردنش را پرهزینه می‌کند و API آماده دارد — Claude Code
+- 2026-10-18 — نمای دوبعدی با Rabbit Ear (foldToSvg/svgToFold)، نه FOLD viewer — هم FOLD و هم SVG را می‌خواند، برای هر نوع خط کلاس CSS می‌گذارد، و در فاز ۲ برای فلش‌ها لازم است — Claude Code
+- 2026-10-18 — نمونه‌ها و نسخه سبک‌شده Origami Simulator در Origami-App commit می‌شوند (به‌روزرسانی با npm run sync:samples / sync:simulator) — vendor/ در git نیست ولی clone تازه باید با npm install && npm run dev اجرا شود — Claude Code
+- 2026-10-18 — ساختار Origami-App: package.json در ریشه، کد وب در app/ (Vite root)، و data/ و tools/ در ریشه — Claude Code
+- 2026-10-18 — i18n بدون کتابخانه (app/src/i18n.ts)؛ کلیدهای جهت‌نما به جهت خواندن بستگی دارند (در فارسی ← یعنی مرحله بعد) — Claude Code
+- 2026-10-18 — Node 22 پرتابل در %LOCALAPPDATA%\Programs\nodejs روی کامپیوتر کاربر (هنوز در PATH نیست) — Node نصب نبود؛ گزینه بدون نیاز به Admin — کاربر
