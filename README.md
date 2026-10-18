@@ -16,6 +16,6 @@ This repo connects the planning sessions (claude.ai project «اپ اوریگا�
 Clone this repo next to Origami-App:
 
 ```
-D:\dev\Claude-Code-for-origami\
-D:\dev\Origami-App\
+D:\literature\کتاب\Origami\Claude-Code-for-origami\
+D:\literature\کتاب\Origami\Origami-App\
 ```

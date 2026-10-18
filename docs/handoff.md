@@ -14,8 +14,8 @@
 
 **روی کامپیوتر کاربر، هر دو کنار هم clone می‌شوند:**
 ```
-D:\dev\Claude-Code-for-origami\
-D:\dev\Origami-App\
+D:\literature\کتاب\Origami\Claude-Code-for-origami\
+D:\literature\کتاب\Origami\Origami-App\
 ```
 Claude Code در `Origami-App` باز می‌شود و طبق `CLAUDE.md` آن، مخزن ارتباطی را از `../Claude-Code-for-origami` می‌خواند (یا از مسیر `COMMS_DIR` در `.env`).
 
