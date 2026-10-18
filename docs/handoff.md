@@ -42,21 +42,13 @@ Claude Code در `Origami-App` باز می‌شود و طبق `CLAUDE.md` آن،
 
 ---
 
-## ۴. فازها: ابزار، ورودی، خروجی، پیش‌نیاز
+## ۴. فازها
 
-| فاز | کجا اجرا | ورودی | خروجی | منبعی که در شروع همین فاز باید تهیه شود |
-|---|---|---|---|---|
-| ۰. راه‌اندازی و مدل داده | Claude Code (هر جا) | `docs/`، `sources/` | ساختار Origami-App، `vendor/`، JSON Schema، اسکلت اپ | — |
-| ۱. هسته نمایش | Claude Code (هر جا) | `sources/digest-core-libraries.md`، `sources/samples/` | نمایشگر دوبعدی + سه‌بعدی + پخش فریم؛ معیار: درنای ۳۷ مرحله‌ای | — |
-| ۲. راهنمای تاهای پایه | claude.ai: فهرست تاها و متن · Claude Code: ساخت | `bases.js` در Rabbit Ear، SVGهای پایه، `sources/origamidraw/`، Doodle | فایل FOLD چندفریمی برای هر تا/پایه + صفحه آموزش | — (OrigamiDraw اکنون در `sources/origamidraw/` است) |
-| ۳. کتابخانه مدل‌ها | Claude Code **روی کامپیوتر کاربر** | کتاب Komatsu، سپس Origami Essence | ابزار PDF ← کادر مراحل، صفحه اصلاح کادرها، JSON مدل‌ها | سنجش وضوح فایل اصلی Komatsu (نمونه ارسالی Print-to-PDF بود) |
-| ۴. سه‌بعدی همگام | Claude Code + کار دستی | مدل‌های منتخب فاز ۳، cp-editor، ORIPA CLI | فریم‌های FOLD متصل به مراحل | **مقاله Akitaya و همکاران، JSST 2013:** https://www.jsst.jp/e/JSST2013/extended_abstract/pdf/Paper%2037.pdf |
-| ۵. تصویر ← پایه درختی | claude.ai: تصمیم الگوریتمی · Claude Code: پیاده‌سازی | `digest-design-engines.md`، BP Studio، skeletonize، TreeMaker | صفحه طراحی: تصویر ← اسکلت ← درخت ← CP ← سه‌بعدی | **روش جداسازی سیلوئت از عکس** (انتخاب و آزمایش یک کتابخانه آماده) |
-| ۶. سه‌بعدی ← الگوی چین | مثل فاز ۵ | ORI-REVO، Freeform Origami، مقاله Origamizer | ابتدا اجسام دوار، سپس چندوجهی‌ها | **مقاله‌های Tachi («Origamizing polyhedral surfaces» و «Tucking molecule») + فایل اجرایی Origamizer** از https://origami.c.u-tokyo.ac.jp/~tachi/software/ |
+فازها، ترتیب و نقش منابع در **`docs/approach.md`** آمده‌اند (رویکرد نسخه ۲، ۲۷ مهر ۱۴۰۵). جدول فازهای قبلی کنار گذاشته شد.
 
-جلسه claude.ai هنگام نوشتن برگه کار هر فاز، منبع ستون آخر را یادآوری می‌کند تا پیش از اجرا تهیه شود.
-
----
+منابعی که در شروع فاز خودشان باید تهیه شوند:
+- فاز ۳ (ورود دیاگرام): سنجش وضوح فایل اصلی Komatsu و Origami Essence؛ مقاله Akitaya و همکاران، JSST 2013: https://www.jsst.jp/e/JSST2013/extended_abstract/pdf/Paper%2037.pdf
+- فاز ۷ (طراحی): روش جداسازی سیلوئت از عکس؛ مقاله‌های Tachi و فایل اجرایی Origamizer از https://origami.c.u-tokyo.ac.jp/~tachi/software/
 
 ## ۵. کدام Claude Code
 
